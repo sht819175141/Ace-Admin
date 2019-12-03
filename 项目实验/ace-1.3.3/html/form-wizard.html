@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<title>Form Wizard - Ace Admin</title>
+
+	<meta name="description" content="and Validation" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+	<link rel="stylesheet" href="../assets/css/font-awesome.css" />
+
+	<!-- page specific plugin styles -->
+	<link rel="stylesheet" href="../assets/css/select2.css" />
+
+	<!-- text fonts -->
+	<link rel="stylesheet" href="../assets/css/ace-fonts.css" />
+
+	<!-- ace styles -->
+	<link rel="stylesheet" href="../assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+	<!--[if lte IE 9]>
+			<link rel="stylesheet" href="../assets/css/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+	<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="../assets/css/ace-ie.css" />
+		<![endif]-->
+
+	<!-- inline styles related to this page -->
+
+	<!-- ace settings handler -->
+	<script src="../assets/js/ace-extra.js"></script>
+
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+	<!--[if lte IE 8]>
+		<script src="../assets/js/html5shiv.js"></script>
+		<script src="../assets/js/respond.js"></script>
+		<![endif]-->
+</head>
+
+<body class="no-skin">
+
+	<!-- /section:basics/navbar.layout -->
+	<div class="main-container" id="main-container">
+		<!-- /section:basics/sidebar -->
+		<div class="main-content">
+			<div class="main-content-inner">
+				<div class="page-content">
+
+					<div class="row">
+						<div class="col-xs-12">
+
+							<div class="hr hr-18 hr-double dotted"></div>
+
+							<div class="widget-box">
+								<div class="widget-body">
+									<div class="widget-main">
+										<div id="fuelux-wizard-container">
+											<div>
+												<ul class="steps">
+													<li data-step="1" class="active">
+														<span class="step">1</span>
+														<span class="title">Validation states</span>
+													</li>
+
+													<li data-step="2">
+														<span class="step">2</span>
+														<span class="title">Alerts</span>
+													</li>
+
+													<li data-step="3">
+														<span class="step">3</span>
+														<span class="title">Payment Info</span>
+													</li>
+
+													<li data-step="4">
+														<span class="step">4</span>
+														<span class="title">Other Info</span>
+													</li>
+												</ul>
+											</div>
+
+											<hr />
+
+											<!-- #section:plugins/fuelux.wizard.container -->
+											<div class="step-content pos-rel">
+												<div class="step-pane active" data-step="1">
+													<form class="form-horizontal" id="validation-form" method="get">
+
+														<div class="form-group">
+															<label class="control-label col-xs-12 col-sm-3 no-padding-right">Gender</label>
+
+															<div class="col-xs-12 col-sm-9">
+																<div>
+																	<label class="line-height-1 blue">
+																			<input name="gender" value="1" type="radio" class="ace" />
+																			<span class="lbl"> Male</span>
+																		</label>
+																</div>
+
+																<div>
+																	<label class="line-height-1 blue">
+																			<input name="gender" value="2" type="radio" class="ace" />
+																			<span class="lbl"> Female</span>
+																		</label>
+																</div>
+															</div>
+														</div>
+														<div class="space-8"></div>
+
+														<div class="form-group">
+															<div class="col-xs-12 col-sm-4 col-sm-offset-3">
+																<label>
+																		<input name="agree" id="agree" type="checkbox" class="ace" />
+																		<span class="lbl"> I accept the policy</span>
+																	</label>
+															</div>
+														</div>
+													</form>
+												</div>
+
+												<div class="step-pane" data-step="2">
+													<form class="form-horizontal" id="validation-for" method="get">
+
+														<div class="form-group">
+															<label class="control-label col-xs-12 col-sm-3 no-padding-right">Gender</label>
+
+															<div class="col-xs-12 col-sm-9">
+																<div>
+																	<label class="line-height-1 blue">
+																			<input name="gender" value="1" type="radio" class="ace" />
+																			<span class="lbl"> Male</span>
+																		</label>
+																</div>
+
+																<div>
+																	<label class="line-height-1 blue">
+																			<input name="gender" value="2" type="radio" class="ace" />
+																			<span class="lbl"> Female</span>
+																		</label>
+																</div>
+															</div>
+														</div>
+														<div class="space-8"></div>
+
+														<div class="form-group">
+															<div class="col-xs-12 col-sm-4 col-sm-offset-3">
+																<label>
+																		<input name="agree" id="agree" type="checkbox" class="ace" />
+																		<span class="lbl"> I accept the policy</span>
+																	</label>
+															</div>
+														</div>
+													</form>
+												</div>
+
+												<div class="step-pane" data-step="3">
+													<div class="center">
+														<h3 class="blue lighter">This is step 3</h3>
+													</div>
+												</div>
+
+												<div class="step-pane" data-step="4">
+													<div class="center">
+														<h3 class="green">Congrats!</h3> Your product is ready to ship! Click finish to continue!
+													</div>
+												</div>
+											</div>
+
+											<!-- /section:plugins/fuelux.wizard.container -->
+										</div>
+
+										<hr />
+										<div class="wizard-actions">
+											<!-- #section:plugins/fuelux.wizard.buttons -->
+											<button class="btn btn-prev">
+													<i class="ace-icon fa fa-arrow-left"></i>
+													Prev
+												</button>
+
+											<button class="btn btn-success btn-next" data-last="Finish">
+													Next
+													<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+												</button>
+										</div>
+									</div>
+									<!-- /.widget-main -->
+								</div>
+								<!-- /.widget-body -->
+							</div>
+						</div>
+						<!-- /.col -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.page-content -->
+			</div>
+		</div>
+	</div>
+	<!-- /.main-container -->
+
+	<!-- basic scripts -->
+
+	<!--[if !IE]> -->
+	<script type="text/javascript">
+		window.jQuery || document.write("<script src='../assets/js/jquery.js'>" + "<" + "/script>");
+	</script>
+
+	<!-- <![endif]-->
+
+	<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='../assets/js/jquery1x.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+	<script type="text/javascript">
+		if ('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.js'>" + "<" + "/script>");
+	</script>
+	<script src="../assets/js/bootstrap.js"></script>
+
+	<!-- page specific plugin scripts -->
+	<script src="../assets/js/fuelux/fuelux.wizard.js"></script>
+	<script src="../assets/js/jquery.validate.js"></script>
+	<script src="../assets/js/additional-methods.js"></script>
+	<script src="../assets/js/bootbox.js"></script>
+	<script src="../assets/js/jquery.maskedinput.js"></script>
+	<script src="../assets/js/select2.js"></script>
+
+	<!-- ace scripts -->
+	<script src="../assets/js/ace/elements.scroller.js"></script>
+	<script src="../assets/js/ace/elements.colorpicker.js"></script>
+	<script src="../assets/js/ace/elements.fileinput.js"></script>
+	<script src="../assets/js/ace/elements.typeahead.js"></script>
+	<script src="../assets/js/ace/elements.wysiwyg.js"></script>
+	<script src="../assets/js/ace/elements.spinner.js"></script>
+	<script src="../assets/js/ace/elements.treeview.js"></script>
+	<script src="../assets/js/ace/elements.wizard.js"></script>
+	<script src="../assets/js/ace/elements.aside.js"></script>
+	<script src="../assets/js/ace/ace.js"></script>
+	<script src="../assets/js/ace/ace.ajax-content.js"></script>
+	<script src="../assets/js/ace/ace.touch-drag.js"></script>
+	<script src="../assets/js/ace/ace.sidebar.js"></script>
+	<script src="../assets/js/ace/ace.sidebar-scroll-1.js"></script>
+	<script src="../assets/js/ace/ace.submenu-hover.js"></script>
+	<script src="../assets/js/ace/ace.widget-box.js"></script>
+	<script src="../assets/js/ace/ace.settings.js"></script>
+	<script src="../assets/js/ace/ace.settings-rtl.js"></script>
+	<script src="../assets/js/ace/ace.settings-skin.js"></script>
+	<script src="../assets/js/ace/ace.widget-on-reload.js"></script>
+	<script src="../assets/js/ace/ace.searchbox-autocomplete.js"></script>
+
+	<!-- inline scripts related to this page -->
+	<script type="text/javascript">
+		jQuery(function($) {
+
+			var $validation = true;
+			$('#fuelux-wizard-container').ace_wizard({
+				//step: 2 //optional argument. wizard will jump to step "2" at first
+				//buttons: '.wizard-actions:eq(0)'
+			})
+			.on('actionclicked.fu.wizard' , function(e, info){
+				if(info.step == 1 && $validation) {
+					var r=$('#validation-form').valid()
+					if(!r) {
+						e.preventDefault()
+					};
+				}
+			})
+			.on('finished.fu.wizard', function(e) {
+				bootbox.dialog({
+					message: "Thank you! Your information was successfully saved!",
+					buttons: {
+						"success" : {
+							"label" : "OK",
+							"className" : "btn-sm btn-primary"
+						}
+					}
+				});
+			}).on('stepclick.fu.wizard', function(e){
+				//e.preventDefault();//this will prevent clicking and selecting steps
+			});
+
+			$('#validation-form').validate({
+				errorElement: 'div',
+				errorClass: 'help-block',
+				focusInvalid: false,
+				ignore: "",
+				rules: {
+					gender: {
+						required: true,
+					},
+					agree: {
+						required: true,
+					}
+				},
+
+				messages: {
+					gender: "Please choose gender",
+					agree: "Please accept our policy"
+				},
+
+
+				highlight: function (e) {
+					$(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+				},
+
+				success: function (e) {
+					$(e).closest('.form-group').removeClass('has-error');//.addClass('has-info');
+					$(e).remove();
+				},
+
+				errorPlacement: function (error, element) {
+					if(element.is('input[type=checkbox]') || element.is('input[type=radio]')) {
+						var controls = element.closest('div[class*="col-"]');
+						if(controls.find(':checkbox,:radio').length > 1) controls.append(error);
+						else error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+					}
+					else if(element.is('.select2')) {
+						error.insertAfter(element.siblings('[class*="select2-container"]:eq(0)'));
+					}
+					else if(element.is('.chosen-select')) {
+						error.insertAfter(element.siblings('[class*="chosen-container"]:eq(0)'));
+					}
+					else error.insertAfter(element.parent());
+				},
+
+				submitHandler: function (form) {
+				},
+				invalidHandler: function (form) {
+				}
+			});
+
+		})
+	</script>
+	</script>
+
+	<!-- the following scripts are used in demo only for onpage help and you don't need them -->
+	<link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+	<link rel="stylesheet" href="../docs/assets/js/themes/sunburst.css" />
+
+	<script type="text/javascript">
+		ace.vars['base'] = '..';
+	</script>
+	<script src="../assets/js/ace/elements.onpage-help.js"></script>
+	<script src="../assets/js/ace/ace.onpage-help.js"></script>
+	<script src="../docs/assets/js/rainbow.js"></script>
+	<script src="../docs/assets/js/language/generic.js"></script>
+	<script src="../docs/assets/js/language/html.js"></script>
+	<script src="../docs/assets/js/language/css.js"></script>
+	<script src="../docs/assets/js/language/javascript.js"></script>
+</body>
+
+</html>

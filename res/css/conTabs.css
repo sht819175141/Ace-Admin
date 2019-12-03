@@ -1,0 +1,138 @@
+body,body.full-height-layout #page-wrapper,body.full-height-layout #wrapper,html,#main-container,#main-container,#page-content
+	{
+	height: 100%;
+}
+
+.content-tabs {
+	border-bottom: solid 2px #39aef5;
+}
+.content-tabs {
+	position: relative;
+	height: 42px;
+	background: #fafafa;
+	line-height: 40px;
+	margin-left: 0px;
+}
+
+nav.page-tabs {
+	margin-left: 40px;
+	width: 100000px;
+	height: 40px;
+	overflow: hidden;
+}
+
+nav.page-tabs .page-tabs-content {
+	float: left;
+}
+
+.page-tabs a.active {
+	background: #39aef5;
+	color: #fff;
+}
+.page-tabs a {
+	color: #999;
+}
+
+.page-tabs a {
+	display: block;
+	float: left;
+	border-right: solid 1px #eee;
+	padding: 0 15px;
+}
+
+.J_menuTab {
+	-webkit-transition: all .3s ease-out 0s;
+	transition: all .3s ease-out 0s;
+}
+.content-tabs .roll-nav,.page-tabs-list {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: #999;
+	z-index: 2;
+	top: 0
+}
+
+.content-tabs .roll-left {
+	left: 0;
+	border-right: solid 1px #eee
+}
+
+.content-tabs .roll-right {
+	right: 0;
+	border-left: solid 1px #eee
+}
+
+.content-tabs button {
+	background: #fff;
+	border: 0;
+	height: 40px;
+	width: 40px;
+	outline: 0
+}
+
+.content-tabs button:hover {
+	background: #fafafa
+}
+
+nav.page-tabs {
+	margin-left: 40px;
+	width: 100000px;
+	height: 40px;
+	overflow: hidden
+}
+
+nav.page-tabs .page-tabs-content {
+	float: left
+}
+
+.page-tabs a {
+	display: block;
+	float: left;
+	border-right: solid 1px #eee;
+	padding: 0 15px
+}
+
+.page-tabs a i:hover {
+	color: #c00
+}
+
+.content-tabs .roll-nav:hover,.page-tabs a:hover {
+	color: #777;
+	background: #f2f2f2;
+	cursor: pointer;
+	text-decoration: none;
+}
+.page-tabs a.active i:hover,.page-tabs a.active:hover {
+    background: #0e9aef;
+    color: #fff;
+    text-decoration: none;
+}
+.page-tabs a.active {
+    background: #39aef5;
+    color: #fff;
+}
+#content-main {
+    height: calc(100% - 10px);
+    overflow: hidden;
+}
+iframe[Attributes Style] {
+    width: 100%;
+    height: 100%;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+user agent stylesheet
+iframe {
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+}
